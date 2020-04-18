@@ -1,5 +1,6 @@
 {
   "name": "bitpage",
+  "homepage": "http://kangbit.github.io/bitpage",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -18,7 +19,8 @@
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "test": "react-app-rewired test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy":"npm run build&&gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,7 +44,8 @@
     "@babel/preset-env": "^7.9.5",
     "@babel/preset-react": "^7.9.4",
     "babel-loader": "^8.1.0",
-    "core-decorators": "^0.20.0"
+    "core-decorators": "^0.20.0",
+    "gh-pages": "^2.2.0"
   },
   "babel": {
     "presets": [
