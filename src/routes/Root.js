@@ -9,7 +9,7 @@ function Root() {
     return (
         <BrowserRouter>
             <div>
-                <Route exact path="/" component={App}/>
+                <Route exact path="/bitpage" component={App}/>
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/test" component={Test}/>
             </div>
