@@ -7,9 +7,9 @@ import Test from '../components/Test'
 
 function Root() {
     return (
-        <BrowserRouter>
+        <BrowserRouter basename="bitpage">
             <div>
-                <Route exact path="/bitpage" component={App}/>
+                <Route exact path="/" component={App}/>
                 <Route exact path="/home" component={Home}/>
                 <Route exact path="/test" component={Test}/>
             </div>
